@@ -4,8 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VyVora Studio</title>
-<meta name="description" content="VyVora Studio brings you delightful children's coloring books and rhyming books.">
+<title>VyVora Studio | Kids Books</title>
+<meta name="description" content="Discover delightful children's coloring books and animal rhymes at VyVora Studio.">
 
 <style>
 * {
@@ -21,161 +21,197 @@ body {
 }
 
 header {
-  background: #ff914d;
-  color: white;
-  padding: 25px 15px;
+  background: #ffe8d6;
+  padding: 24px 15px;
   text-align: center;
 }
 
 header h1 {
+  color: #6b4f3b;
   font-size: 32px;
-  margin-bottom: 8px;
 }
 
-.bonus {
-  background: #fff0c7;
-  padding: 20px 15px;
-  text-align: center;
+header p {
+  margin-top: 8px;
+  color: #795c49;
 }
 
-.bonus h2 {
-  margin-bottom: 10px;
-}
-
-.bonus p {
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
-
-.bonus a {
-  display: inline-block;
-  background: #ff914d;
+/* BONUS BANNER */
+.bonus-banner {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
   color: white;
-  padding: 12px 22px;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
+  padding: 18px 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.bonus-banner h3 {
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+.bonus-banner p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.bonus-btn {
+  display: inline-block;
+  margin-top: 12px;
+  background: white;
+  color: #ff758c;
+  padding: 9px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* HERO */
 .hero {
+  padding: 45px 20px;
   text-align: center;
-  padding: 40px 15px 25px;
+  background: #fff1e6;
 }
 
 .hero h2 {
-  color: #ff914d;
-  font-size: 30px;
-  margin-bottom: 12px;
-}
-
-.hero p {
-  line-height: 1.6;
-}
-
-.books {
-  max-width: 1100px;
-  margin: auto;
-  padding: 25px 15px 45px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.book {
-  background: white;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-.book img {
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 15px;
-}
-
-.book h3 {
-  font-size: 19px;
-  margin-bottom: 10px;
-}
-
-.book p {
-  font-size: 14px;
-  line-height: 1.6;
-  min-height: 45px;
+  font-size: 28px;
+  color: #604b3b;
   margin-bottom: 15px;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.7;
 }
 
-.buttons a {
+/* BOOKS */
+.books {
+  padding: 35px 15px;
+}
+
+.books h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #604b3b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 3px 12px #00000010;
+  text-align: center;
+}
+
+.cover {
+  width: 100%;
+  aspect-ratio: 1 / 1.25;
+  background: #f4e9df;
+  border-radius: 10px;
+  object-fit: contain;
   display: block;
-  padding: 12px 8px;
-  text-decoration: none;
-  color: white;
-  border-radius: 25px;
+}
+
+/* COVER IMAGE FALLBACK */
+.cover-fallback {
+  width: 100%;
+  aspect-ratio: 1 / 1.25;
+  border-radius: 10px;
+  background: #f4e9df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8c7662;
+  padding: 15px;
+  text-align: center;
   font-size: 14px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 9px;
+  color: white;
   font-weight: bold;
 }
 
-.amazon {
-  background: #263443;
-}
-
 .gumroad {
-  background: #ff914d;
+  background: #ff8293;
 }
 
+.amazon {
+  background: #e6a34c;
+}
+
+/* FOOTER */
 footer {
-  background: #333;
-  color: white;
   text-align: center;
   padding: 25px 15px;
+  background: #ffe8d6;
+  color: #6b4f3b;
+  line-height: 1.8;
 }
 
-@media (max-width: 750px) {
-  .books {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 13px;
-    padding: 18px 10px 35px;
+/* MOBILE */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
 
-  .book {
+  .card {
     padding: 10px;
   }
 
-  .book img {
-    height: 210px;
-  }
-
-  .book h3 {
+  .card h3 {
     font-size: 16px;
   }
 
-  .book p {
+  .card p {
     font-size: 13px;
   }
 
-  .buttons a {
+  .btn {
+    padding: 10px 5px;
     font-size: 12px;
-    padding: 11px 5px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .bonus-banner h3 {
+    font-size: 18px;
   }
 }
 
 @media (max-width: 360px) {
-  .books {
+  .grid {
     grid-template-columns: 1fr;
-  }
-
-  .book img {
-    height: 260px;
   }
 }
 </style>
@@ -185,81 +221,100 @@ footer {
 
 <header>
   <h1>VyVora Studio</h1>
-  <p>Creative Coloring Books & Rhyming Books for Kids</p>
+  <p>Little Books, Big Imagination</p>
 </header>
 
-<section class="bonus">
-  <h2>🎁 Special Limited-Time Bonus!</h2>
+<!-- SPECIAL BONUS -->
+<div class="bonus-banner">
+  <h3>🎁 Special Limited-Time Bonus!</h3>
   <p>Har coloring book ke sath paye 2 Extra Printable Pages bilkul FREE!</p>
-  <a href="bonus.html">Get Your Free Bonus</a>
-</section>
+  <a href="bonus.html" class="bonus-btn">View Offer Details →</a>
+</div>
 
+<!-- HERO -->
 <section class="hero">
   <h2>Make Every Moment Creative</h2>
-  <p>Discover fun coloring books and lovely rhymes for little imaginations.</p>
+  <p>
+    Explore adorable coloring books and joyful animal rhymes
+    designed to bring creativity, fun and happy moments
+    to children and families.
+  </p>
 </section>
 
+<!-- BOOK COLLECTION -->
 <section class="books">
+  <h2>Our Books</h2>
 
-  <!-- Book 1 -->
-  <div class="book">
-    <img src="cute-animals.jpg" alt="Cute Animals Coloring Book">
-    <h3>Cute Animals Coloring Book</h3>
-    <p>Adorable animals and fun coloring pages for little artists.</p>
-    <div class="buttons">
-      <a class="amazon" href="https://www.amazon.com/dp/B0HQW3QCW4" target="_blank" rel="noopener">Buy on Amazon</a>
-      <a class="gumroad" href="https://tanay8.gumroad.com/l/xagkmi" target="_blank" rel="noopener">Get Digital Book</a>
+  <div class="grid">
+
+    <!-- BOOK 1 -->
+    <div class="card">
+      <img class="cover"
+           src="Tanay/cute-animals.jpg"
+           alt="Cute Animals Coloring Book Cover"
+           onerror="this.onerror=null;this.outerHTML='<div class=\'cover-fallback\'>Cute Animals Coloring Book cover</div>';">
+      <h3>Cute Animals Coloring Book</h3>
+      <p>A fun collection of adorable animals for little artists.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/xagkmi" target="_blank">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HQW3QCW4" target="_blank">Buy on Amazon</a>
     </div>
-  </div>
 
-  <!-- Book 2 -->
-  <div class="book">
-    <img src="underwater-animals.jpg" alt="Underwater Animals Coloring Book">
-    <h3>Underwater Animals Coloring Book</h3>
-    <p>Explore the ocean with fun sea creatures and coloring activities.</p>
-    <div class="buttons">
-      <a class="amazon" href="https://www.amazon.com/dp/B0HRTF1YG3" target="_blank" rel="noopener">Buy on Amazon</a>
-      <a class="gumroad" href="https://tanay8.gumroad.com/l/dqhdlk" target="_blank" rel="noopener">Get Digital Book</a>
+    <!-- BOOK 2 -->
+    <div class="card">
+      <img class="cover"
+           src="Tanay/underwater-animals.jpg"
+           alt="Underwater Animals Coloring Book Cover"
+           onerror="this.onerror=null;this.outerHTML='<div class=\'cover-fallback\'>Underwater Animals Coloring Book cover</div>';">
+      <h3>Underwater Animals Coloring Book</h3>
+      <p>Discover the wonderful world beneath the ocean.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/dqhdlk" target="_blank">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HRTF1YG3" target="_blank">Buy on Amazon</a>
     </div>
-  </div>
 
-  <!-- Book 3 -->
-  <div class="book">
-    <img src="christmas-animals.jpg" alt="Christmas Cute Animals Coloring Book">
-    <h3>Christmas Cute Animals Coloring Book</h3>
-    <p>Festive animals and Christmas coloring fun for kids.</p>
-    <div class="buttons">
-      <a class="amazon" href="https://www.amazon.com/dp/B0HRR4HM49" target="_blank" rel="noopener">Buy on Amazon</a>
-      <a class="gumroad" href="https://tanay8.gumroad.com/l/zfkxlux" target="_blank" rel="noopener">Get Digital Book</a>
+    <!-- BOOK 3 -->
+    <div class="card">
+      <img class="cover"
+           src="Tanay/christmas-animals.jpg"
+           alt="Christmas Cute Animals Coloring Book Cover"
+           onerror="this.onerror=null;this.outerHTML='<div class=\'cover-fallback\'>Christmas Animals Coloring Book cover</div>';">
+      <h3>Christmas Cute Animals</h3>
+      <p>Festive coloring fun with cute Christmas animals.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/zfkxlux" target="_blank">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HRR4HM49" target="_blank">Buy on Amazon</a>
     </div>
-  </div>
 
-  <!-- Book 4 -->
-  <div class="book">
-    <img src="car-coloring.jpg" alt="Car Coloring Book">
-    <h3>Car Coloring Book</h3>
-    <p>Exciting cars and vehicles for young coloring enthusiasts.</p>
-    <div class="buttons">
-      <a class="amazon" href="https://www.amazon.com/dp/B0HRFFS68X" target="_blank" rel="noopener">Buy on Amazon</a>
-      <a class="gumroad" href="https://tanay8.gumroad.com/l/pgegv" target="_blank" rel="noopener">Get Digital Book</a>
+    <!-- BOOK 4 -->
+    <div class="card">
+      <img class="cover"
+           src="Tanay/car-coloring.jpg"
+           alt="Car Coloring Book Cover"
+           onerror="this.onerror=null;this.outerHTML='<div class=\'cover-fallback\'>Car Coloring Book cover</div>';">
+      <h3>Car Coloring Book</h3>
+      <p>Creative coloring fun with exciting vehicles.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/pgegv" target="_blank">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HRFFS68X" target="_blank">Buy on Amazon</a>
     </div>
-  </div>
 
-  <!-- Book 5 -->
-  <div class="book">
-    <img src="jungle-friends.jpg" alt="Jungle Friends Animal Rhymes">
-    <h3>Jungle Friends – Animal Rhymes</h3>
-    <p>Enjoy cheerful jungle animal rhymes and fun stories.</p>
-    <div class="buttons">
-      <a class="amazon" href="https://www.amazon.com/dp/B0HRQC5RYZ" target="_blank" rel="noopener">Buy on Amazon</a>
-      <a class="gumroad" href="https://tanay8.gumroad.com/l/cacovw" target="_blank" rel="noopener">Get Digital Book</a>
+    <!-- BOOK 5 -->
+    <div class="card">
+      <img class="cover"
+           src="Tanay/jungle-friends.jpg"
+           alt="Jungle Friends Animal Rhymes Book Cover"
+           onerror="this.onerror=null;this.outerHTML='<div class=\'cover-fallback\'>Jungle Friends Rhymes cover</div>';">
+      <h3>Jungle Friends – Animal Rhymes</h3>
+      <p>Sweet animal rhymes and jungle adventures for kids.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/cacovw" target="_blank">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HRQC5RYZ" target="_blank">Buy on Amazon</a>
     </div>
-  </div>
 
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 VyVora Studio. All rights reserved.</p>
+  <h3>VyVora Studio</h3>
+  <p>Creative books for little minds.</p>
+  <p>Thank you for supporting our small creative studio ❤️</p>
 </footer>
 
 </body>
