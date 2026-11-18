@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +28,34 @@ header h1 {
 header p {
   margin-top: 8px;
   color: #795c49;
+}
+/* Bonus Offer Banner Style */
+.bonus-banner {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.bonus-banner h3 {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+}
+.bonus-banner p {
+  margin: 0;
+  font-size: 14px;
+}
+.bonus-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: white;
+  color: #ff758c;
+  padding: 6px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
 }
 .hero {
   padding: 45px 20px;
@@ -114,6 +141,13 @@ footer {
   <h1>VyVora Studio</h1>
   <p>Little Books, Big Imagination</p>
 </header>
+
+<!-- Special Bonus Offer Banner added right below header -->
+<div class="bonus-banner">
+  <h3>🎁 Special Limited-Time Bonus!</h3>
+  <p>Har coloring book ke sath paye 2 Extra Printable Pages bilkul FREE!</p>
+  <a href="bonus.html" class="bonus-btn">View Offer Details →</a>
+</div>
 
 <section class="hero">
   <h2>Make Every Moment Creative</h2>
