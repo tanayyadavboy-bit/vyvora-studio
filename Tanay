@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VyVora Studio | Kids Books</title>
+<meta name="description" content="Discover delightful children's coloring books and animal rhymes at VyVora Studio.">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf5;
+  color: #333;
+}
+header {
+  background: #ffe8d6;
+  padding: 24px 15px;
+  text-align: center;
+}
+header h1 {
+  color: #6b4f3b;
+  font-size: 32px;
+}
+header p {
+  margin-top: 8px;
+  color: #795c49;
+}
+.hero {
+  padding: 45px 20px;
+  text-align: center;
+  background: #fff1e6;
+}
+.hero h2 {
+  font-size: 28px;
+  color: #604b3b;
+  margin-bottom: 15px;
+}
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.7;
+}
+.books {
+  padding: 35px 15px;
+}
+.books h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #604b3b;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 3px 12px #00000010;
+  text-align: center;
+}
+.cover {
+  width: 100%;
+  aspect-ratio: 1 / 1.25;
+  background: #f4e9df;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 15px;
+}
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 11px;
+  border-radius: 8px;
+  margin-top: 9px;
+  color: white;
+  font-weight: bold;
+}
+.gumroad {
+  background: #ff8293;
+}
+.amazon {
+  background: #e6a34c;
+}
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  background: #ffe8d6;
+  color: #6b4f3b;
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>VyVora Studio</h1>
+  <p>Little Books, Big Imagination</p>
+</header>
+
+<section class="hero">
+  <h2>Make Every Moment Creative</h2>
+  <p>
+    Explore adorable coloring books and joyful animal rhymes
+    designed to bring creativity, fun and happy moments
+    to children and families.
+  </p>
+</section>
+
+<section class="books">
+  <h2>Our Books</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img class="cover" src="cute-animals.jpg" alt="Cute Animals Coloring Book Cover">
+      <h3>Cute Animals Coloring Book</h3>
+      <p>A fun collection of adorable animals for little artists.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/xagkmi">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HQW3QCW4">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img class="cover" src="underwater-animals.jpg" alt="Underwater Animals Coloring Book Cover">
+      <h3>Underwater Animals Coloring Book</h3>
+      <p>Discover the wonderful world beneath the ocean.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/dqhdlk">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HRTF1YG3">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img class="cover" src="christmas-animals.jpg" alt="Christmas Cute Animals Coloring Book Cover">
+      <h3>Christmas Cute Animals</h3>
+      <p>Festive coloring fun with cute Christmas animals.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/zfkxlux">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HRR4HM49">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img class="cover" src="car-coloring.jpg" alt="Car Coloring Book Cover">
+      <h3>Car Coloring Book</h3>
+      <p>Creative coloring fun with exciting vehicles.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/pgegv">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HRFFS68X">Buy on Amazon</a>
+    </div>
+
+    <div class="card">
+      <img class="cover" src="jungle-friends.jpg" alt="Jungle Friends Animal Rhymes Book Cover">
+      <h3>Jungle Friends – Animal Rhymes</h3>
+      <p>Sweet animal rhymes and jungle adventures for kids.</p>
+      <a class="btn gumroad" href="https://tanay8.gumroad.com/l/cacovw">Get on Gumroad</a>
+      <a class="btn amazon" href="https://www.amazon.com/dp/B0HRQC5RYZ">Buy on Amazon</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <h3>VyVora Studio</h3>
+  <p>Creative books for little minds.</p>
+  <p>Thank you for supporting our small creative studio ❤️</p>
+</footer>
+
+</body>
+</html>
